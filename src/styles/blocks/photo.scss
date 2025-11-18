@@ -1,0 +1,19 @@
+.photo {
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  background-image: url(../images/photo-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-min-width) {
+    height: 400px;
+    background-image: url(../images/photo-bg-2x.png);
+  }
+
+  @media (min-width: $desktop-min-width) {
+    height: 460px;
+    background-image: url(../images/photo-bg-3x.png);
+  }
+}
