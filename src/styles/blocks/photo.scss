@@ -2,18 +2,18 @@
   margin: 0;
   padding: 0;
   height: 200px;
-  background-image: url(../images/photo-bg.png);
+  background-image: url(../images/photo-bg-mobile.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  @media (min-width: $tablet-min-width) {
+  @include on-tablet {
     height: 400px;
-    background-image: url(../images/photo-bg-2x.png);
+    background-image: url(../images/photo-bg-tablet.png);
   }
 
-  @media (min-width: $desktop-min-width) {
+  @include on-desktop {
     height: 460px;
-    background-image: url(../images/photo-bg-3x.png);
+    background-image: url(../images/photo-bg-desktop.png);
   }
 }
