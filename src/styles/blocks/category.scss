@@ -12,6 +12,8 @@
 
     @include on-tablet {
       grid-column: span 3;
+      height: auto;
+      padding-bottom: 63%;
     }
 
     @include on-desktop {
@@ -25,10 +27,17 @@
     height: 100%;
     object-fit: cover;
 
+    @include on-tablet {
+      height: 100%;
+      border-radius: 8px;
+    }
+
     @include hover(transform, scale(1.2));
   }
 
   &__title {
+    margin-top: 16px;
+    margin-bottom: 0;
     font-weight: 700;
     font-style: Bold;
     font-size: 24px;
