@@ -10,6 +10,8 @@
 
   &__button {
     @include page-grid;
+    
+    text-decoration: none;
 
     &-view-all {
       position: relative;

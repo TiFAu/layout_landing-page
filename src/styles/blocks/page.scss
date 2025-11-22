@@ -3,7 +3,7 @@
   color: $main-text-color;
   scroll-behavior: smooth;
 
-  @include font-size(400, 16px, 140%, 0.15);
+  @include font-size(400, 16px, 140%, 0.15px);
 
   &__body {
     margin: 0;
