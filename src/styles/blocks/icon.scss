@@ -1,15 +1,10 @@
 .icon {
   display: block;
-  height: $icon-side-mobile;
-  width: $icon-side-mobile;
+  height: $icon-side;
+  width: $icon-side;
   background-size: cover;
 
   @include hover(transform, scale(1.2));
-
-  @include on-tablet {
-    height: $icon-side-tablet;
-    width: $icon-side-tablet;
-  }
 
   &--phone {
     background-image: url(../images/icons/icon-phone.svg);
@@ -20,17 +15,19 @@
         position: absolute;
         content: $phone-number;
         text-decoration: none;
-        top: $icon-side-mobile / 2;
+        top: $icon-side / 2;
         right: 16px;
         display: flex;
         width: 180px;
 
         font-family: Inter, sans-serif;
+
         font-weight: 700;
         font-style: Bold;
         font-size: 12px;
         line-height: 16px;
         letter-spacing: 2px;
+
         text-align: right;
         vertical-align: middle;
         text-transform: uppercase;
